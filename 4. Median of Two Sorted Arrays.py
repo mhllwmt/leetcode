@@ -11,7 +11,7 @@ class Solution:
             r1, r2 = n-1, m-1
             while k != 1 and l1 <= r1 and l2 <= r2:
                 t1,  t2 = min(r1, l1 + k // 2 - 1), l2 + k // 2 - 1
-                if nums1[t1] <= nums2[t2]:  # 小于号好重要
+                if nums1[t1] <= nums2[t2]: 
                     k -= t1 - l1 + 1
                     l1 = t1 + 1
                 else:
